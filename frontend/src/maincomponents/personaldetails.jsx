@@ -61,7 +61,7 @@ return (
         </CardContent>
         <CardFooter className="flex justify-center">
             <Label htmlFor="submit"><Button>Next</Button></Label>
-            <Input type="submit" form="resume-info" method="POST" action=""/>
+            <Input type="submit" form="resume-info" method="POST" action="http://localhost:3000/personal_details"/>
         </CardFooter>
     </Card>
 )
