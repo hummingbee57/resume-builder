@@ -26,7 +26,7 @@ return (
             <CardDescription>Enter your personal details</CardDescription>
         </CardHeader>
         <CardContent>
-            <form>
+            <form id="resume-info">
                 <div className="grid grid-cols-2 gap-4">
                     <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="name">Name</Label>
@@ -60,7 +60,8 @@ return (
             </form>
         </CardContent>
         <CardFooter className="flex justify-center">
-            <Button>Next</Button>
+            <Label htmlFor="submit"><Button>Next</Button></Label>
+            <Input type="submit" form="resume-info" method="POST" action=""/>
         </CardFooter>
     </Card>
 )
