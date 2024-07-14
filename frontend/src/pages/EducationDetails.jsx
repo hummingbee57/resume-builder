@@ -1,9 +1,14 @@
-import React from 'react'
+import { Educational_Details_Form } from "@/maincomponents/educationaldetails";
+import React from "react";
 
-const EducationDetails = () => {
+const EducationalDetails = () => {
   return (
-    <div>EducationDetails</div>
-  )
-}
+    <div className="flex-col justify-center p-3">
+      <div>
+        <Educational_Details_Form />
+      </div>
+    </div>
+  );
+};
 
-export default EducationDetails
+export default EducationalDetails;

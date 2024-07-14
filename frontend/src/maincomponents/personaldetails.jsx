@@ -19,15 +19,15 @@ return (
             <CardDescription>Enter your personal details</CardDescription>
         </CardHeader>
         <CardContent>
-            <form>
+            <form id="resume-info">
                 <div className="grid grid-cols-2 gap-4">
                     <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="name">Name</Label>
-                        <Input id="name" placeholder="Name" />
+                        <Input id="firstName" placeholder="Name" />
                     </div>
                     <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="last name">Last Name</Label>
-                        <Input id="last name" placeholder="Your Last Name" />
+                        <Input id="lastName" placeholder="Your Last Name" />
                     </div>
                     <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="email">Email</Label>
@@ -53,7 +53,8 @@ return (
             </form>
         </CardContent>
         <CardFooter className="flex justify-center">
-            <Button>Next</Button>
+            <Label htmlFor="submit"><Button>Next</Button></Label>
+            <Input type="submit" form="resume-info" method="POST" action="http://localhost:3000/personal_details"/>
         </CardFooter>
     </Card>
 )
