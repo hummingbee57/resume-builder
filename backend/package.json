@@ -4,8 +4,7 @@
   "description": "Resume builder app for MLH's Hack Your Portfolio Hackathon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon backend/server.js"
+    "dev": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "",
